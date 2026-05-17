@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique Santé+ - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE D'ACCUEIL POUR VISITEURS -->
+<div class="accueil-container" id="accueilPage">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-circle">
+  
+             <img src="logoCli.png" alt="Logo" class="logo-img">
+            </div>
+            <h1>Clinique <span>NWIZ+</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Médecins</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="btn-login-nav" onclick="openLoginModal()">Espace Personnel</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="accueil">
+        <h1>Des soins de qualité, une technologie avancée</h1>
+        <p>Clinique Santé+ vous offre une prise en charge complète avec des médecins experts et des équipements modernes.</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn-primary" onclick="openLoginModal()">Prendre RDV</a>
+            <a href="#services" class="btn-secondary">Nos Services</a>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services" id="services">
+        <h2 class="section-title">Nos Services Médicaux</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">👥</div>
+                <h3>Consultations</h3>
+                <p>Consultations générales et spécialisées sur rendez-vous.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚨</div>
+                <h3>Urgences 24/7</h3>
+                <p>Service d'urgences disponible 24h/24, 7j/7.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔬</div>
+                <h3>Laboratoire d'analyses</h3>
+                <p>Analyses biologiques rapides et précises.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📷</div>
+                <h3>Imagerie médicale</h3>
+                <p>Radiologie, échographie, IRM et scanner.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistiques -->
+    <div class="stats">
+        <div class="stat-item">
+            <h2>15000+</h2>
+            <p>Patients satisfaits</p>
+        </div>
+        <div class="stat-item">
+            <h2>25+</h2>
+            <p>Médecins experts</p>
+        </div>
+        <div class="stat-item">
+            <h2>10+</h2>
+            <p>Spécialités médicales</p>
+        </div>
+        <div class="stat-item">
+            <h2>24/7</h2>
+            <p>Service d'urgence</p>
+        </div>
+    </div>
+
+    <!-- Équipe médicale -->
+    <div class="team" id="team">
+        <h2 class="section-title">Notre Équipe Médicale</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="doctor-avatar">👩‍⚕️</div>
+                <h3>Dr. Fatima Zahra</h3>
+                <p>Cardiologue</p>
+            </div>
+            <div class="team-card">
+                <div class="doctor-avatar">👨‍⚕️</div>
+                <h3>Dr. Karim Benali</h3>
+                <p>Pédiatre</p>
+            </div>
+            <div class="team-card">
+                <div class="doctor-avatar">👩‍⚕️</div>
+                <h3>Dr. Amina Tazi</h3>
+                <p>Dermatologue</p>
+            </div>
+            <div class="team-card">
+                <div class="doctor-avatar">👨‍⚕️</div>
+                <h3>Dr. Mehdi Alaoui</h3>
+                <p>Orthopédiste</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="contact">
+        <p>📍 123 Avenue Mohammed V, Marrakech, Maroc</p>
+        <p>📞 +212 565 8654 780 | ✉️ contact@cliniquesNWIZ+.ma</p>
+        <p>&copy; 2025 Clinique NWIZ+ - Tous droits réservés</p>
+    </div>
+</div>
+
+<!-- MODAL DE CONNEXION -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeLoginModal()">&times;</span>
+        <div class="modal-logo">🏥</div>
+        <h2>Accès Gestion Clinique</h2>
+        <p class="modal-subtitle">Connectez-vous à votre espace</p>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email professionnel" required>
+            <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+            <select id="loginRole">
+                <option value="admin">👑 Administrateur</option>
+                <option value="medecin">👨‍⚕️ Médecin</option>
+                <option value="secretaire">📋 Secrétaire</option>
+            </select>
+            <button type="submit">Se connecter →</button>
+        </form>
+        <p class="demo-text">Demo: tout email/mdp | Rôle test</p>
+    </div>
+</div>
+
+<!-- IFRAME POUR L'APPLICATION DE GESTION -->
+<iframe id="gestionApp" style="display:none; width:100%; height:100vh; border:none;"></iframe>
+
+<script src="main.js"></script>
+<script src="gestion.js"></script>
+</body>
+</html>
