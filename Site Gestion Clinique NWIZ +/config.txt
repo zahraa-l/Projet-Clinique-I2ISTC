@@ -1,0 +1,32 @@
+projet-clinique/
+├── index.html      (Page d'accueil + structure)
+├── style.css       (Tous les styles)
+├── gestion.js      (Application de gestion)
+└── main.js         (Logique de l'accueil et connexion)
+
+
+
+
+## 🚀 Instructions d'utilisation
+
+
+   - `index.html`
+   - `style.css`
+   - `main.js`
+   - `gestion.js`
+ **Ouvrez `index.html`** dans un navigateur web
+
+## 🔐 Connexion
+
+- Cliquez sur **"Espace Personnel"**
+- Choisissez un rôle : Administrateur / Médecin / Secrétaire
+- Email et mot de passe quelconques
+
+## 👥 Rôles et accès
+
+| Rôle | Accès |
+|------|-------|
+| **Administrateur** | Accès complet à toutes les pages |
+| **Médecin** | Dashboard, RDV, Consultations, Profil |
+| **Secrétaire** | Dashboard, Patients, RDV, Facturation, Profil |
+
